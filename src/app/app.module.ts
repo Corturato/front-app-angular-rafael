@@ -9,12 +9,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerService } from './customer.service';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+CustomerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
