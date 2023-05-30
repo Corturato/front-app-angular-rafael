@@ -1,6 +1,6 @@
-export interface Customer{
+export interface Customer {
     idCustomer?: any;
-    firstNameCustomer:string;
+    firstNameCustomer: string;
     lastNameCustomer: string;
     cpfCustomer: any;
     birthdateCustomer: any;

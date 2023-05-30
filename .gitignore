@@ -6,7 +6,8 @@
 /out-tsc  
   
 # dependencies  
-/node_modules  
+/node_modules 
+/.angular 
   
 # IDEs and editors  
 /.idea  
@@ -41,7 +42,3 @@ testem.log
 # System Files  
 .DS_Store  
 Thumbs.db
-
-/.node_modules
-.angular/cache
-.angular/cache/15.2.6/angular-webpack/

@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { DatePipe } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomerComponent } from './customer/customer.component';
-import { CustomerService } from './service/customer.service';
-import { FormsModule } from '@angular/forms';
+import { CustomerService } from './service/customer.service'; 
 
 @NgModule({
   declarations: [
@@ -25,16 +30,22 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HttpClientModule,
     MatSlideToggleModule,
     MatButtonModule,
-    MatIconModule,
     MatDividerModule,
     MatToolbarModule,
     MatInputModule,
-    HttpClientModule,
+    MatIconModule,
     FormsModule,
-    BrowserAnimationsModule
+    ReactiveFormsModule,
+    MatTabsModule,
+    MatTableModule,
+    MatCardModule,
+    MatPaginatorModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [
     CustomerService,
