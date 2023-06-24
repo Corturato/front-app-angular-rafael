@@ -25,14 +25,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerService } from './service/customer.service';
 import { CategoryComponent } from './category/category.component';
+import { ProductComponent } from './product/product.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component'; 
 import { CategoryService } from './service/category.service';
+import { ProductService } from './service/product.service';
+
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponent,
     CategoryComponent,
+    ProductComponent,
     MenuComponent,
     HomeComponent
   ],
@@ -60,6 +64,7 @@ import { CategoryService } from './service/category.service';
   providers: [
     CustomerService,
     CategoryService,
+    ProductService,
     DatePipe
   ],
   bootstrap: [AppComponent]
